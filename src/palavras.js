@@ -24,4 +24,6 @@ const palavras = [
     "zebra", "zagueiro", "zero", "zoeira", "zepelim", "zinco", "zumbido"
 ]
 
-export default palavras
+export default function random() {
+    return palavras[Math.floor(Math.random() * palavras.length)];
+}
